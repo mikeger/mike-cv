@@ -1,0 +1,124 @@
+\documentclass[11pt]{moderncv}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{verbatim}
+\usepackage{multicol}
+\usepackage{fontawesome}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\footnotesize{Typeset with \LaTeX}}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue} 
+
+% adjust the page margins
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.5cm,bmargin=2cm,lmargin=2.5cm,rmargin=2cm}
+
+\usepackage{moderntimeline/moderntimeline}
+\tlmaxdates{2007}{2019}
+
+\title{~}
+\firstname{Mike}
+\familyname{Gerasymenko}
+\mobile{+49~175~3357777}
+\email{m@gk0.eu}
+\extrainfo{
+  \emailsymbol\emaillink{mihail@gerasimenko.me} \\
+  \faLinkedin\,\href{https://www.linkedin.com/in/mikeamike}{linkedin.com/in/mikeamike} \\
+  \faGithub\,\href{https://github.com/mikeger}{github.com/mikeger}
+}
+\photo[60pt][0.4pt]{mike-hat.jpg} 
+
+\AfterPreamble{\hypersetup{
+  colorlinks = true,
+  linkcolor = color1,
+  urlcolor  = color1,
+  citecolor = color1,
+  anchorcolor = color1
+}}
+
+\usepackage{etoolbox}
+\patchcmd{\cventry}% <cmd>
+  {\\ \end{tabular*}}% <search>
+  {\\[-1\normalbaselineskip]\end{tabular*}}% <replace>
+  {}{}% <success><failure>
+
+\begin{document}
+\maketitle
+\vspace*{-10mm}
+I am a team lead in love with mobile platforms. I am bringing on board over 12 years of software development experience, 10 years of iOS and 4 years of team leadership experience. My aim is to bring my team and what I am working on to the next level. I have experience working on great products. Excited to see my apps used and appreciate the feedback. 
+
+\begin{multicols}{2}
+\setlength{\textwidth}{\linewidth}
+\recomputecvbodylengths
+
+\section{Language proficiency}
+
+\cvitem{English}{Full professional proficiency}{}{}{}{}
+\cvitem{German}{B2}{}{}{}{}
+\cvitem{Ukrainian, Russian}{Mother tongue}{}{}{}{}
+
+\vfil
+\columnbreak
+\section{Education}
+
+\cventry{2007--2013}{Master of Applied Mathematics}{
+National I. I. Mechnikov University Odessa}{
+Ukraine}{}{}
+
+\cventry{2003--2007}{High School}{Richelieu Lyceum}{}{}{}
+\end{multicols}
+
+\section{Qualifications}
+\cvlistitem{Knowledge in classical algorithms, graph theory, database design, network.}
+\cvlistitem{Coaching and leadership experience, public speaking experience.}
+\cvlistitem{Experience in interviewing and hiring, building the team.}
+\cvlistitem{Good skills in linear algebra and mathematical analysis.}
+\cvlistitem{Hands-on coding experience with Swift 1-5, Objective-C and other langauges.}
+\cvlistitem{Experience with publishing an app on the AppStore.}
+\cvlistitem{Knowledge in setting up and maintaining CI, Travis, CircleCI, fastlane and co.}
+
+\section{Conferences}
+
+\cvlistdoubleitem{Speaker at UIKonf 2018 (\href{https://www.youtube.com/watch?v=uK0faqR3rOs}{End-to-end encryption for iOS developer}).}{Attendee at WWDC 2016 conference in San Francisco.}
+
+\section{Product Awards}
+
+\cvlistitem{Wire: 2015 Winner German Design Award.}
+
+\subsection{STILL EASY}
+
+\cvlistdoubleitem{2014 Red Dot Design Award best of the best in communication design.}{2013 Red Dot Design Award best of the best in communication design.}
+
+\cvlistdoubleitem{2013 iF communication design award.}{2013 Annual Multimedia Award Gold.}
+
+\cvlistitem{2013 Deutscher Preis f\"ur Wirtschaftskommunikation.}
+
+\section{Experience}
+
+\cventry{now}{Team Lead}{Sharecare}{Berlin, Germany}{}{
+Team leadership, regular 1-1 conversations, mobile app development, technical leadership.
+}
+
+\tlcventry{2014}{2019}{Team Lead}{Wire}{Berlin, Germany}{}{
+Team leadership, regular 1-1 conversations, mobile app development, technical leadership.
+}
+
+\tlcventry{2012}{2014}{Technical Lead}{InnoMoS GmbH}{Bielefeld, Germany}{}{
+Mobile app development, technical leadership.
+}
+
+\tlcventry{2010}{2014}{Software Engineer (iOS)}{SoftTechnics LLC}{Odessa, Ukraine}{}{}
+
+\tlcventry{2008}{2010}{Software Engineer (iOS)}{Readdle Inc}{Odessa, Ukraine}{}{}
+
+\tlcventry{2007}{2008}{Software Engineer}{Wildix SRL}{Odessa, Ukraine}{}{}
+
+\noindent \begin{flushright}
+
+\par\end{flushright}
+\end{document}
